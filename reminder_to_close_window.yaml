@@ -9,8 +9,8 @@
 #
 
 blueprint:
-  name: Notification to Close a Window 
-  description: Notification to close windows if it is cold outside
+  name: Notification to turn off the boiler
+  description: Notification to turn off the boiler after 15 minu'
   domain: automation
   input: 
     contact_sensor: 
@@ -18,7 +18,7 @@ blueprint:
       description: 'The window or door sensor that triggers the automation.'
       selector: 
         entity:
-          domain: binary_sensor
+          domain: tuya
     first_timer:
       name: 'First timer'
       description: 'The first notification timer (in minutes).'
